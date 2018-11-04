@@ -6,69 +6,209 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,800" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Sit On Chair</title>
 </head>
 
 <body>
     <header>
-        <div class="header container">
-            <h1 class="header-h1">Sit <span class="green-letter">on</span> chair</h1>
-            <nav class="navigation">
-                <ul>
-                    <li><a href="#">O firmie</a></li>
-                    <li><a href="#">Galeria</a></li>
-                    <li><a href="#">Kontakt</a></li>
-                </ul>
-            </nav>
+        <div class="container">
+            <div class="header row">
+                <div class="col-6">
+                    <h1>Sit <span>on </span>chair</h1>
+                </div>
+                <div class="col-6">
+                    <nav class="navigation">
+                        <ul>
+                            <li><a href="#">O firmie</a>
+                                <div class="around-dropdown">
+                                    <ul id="dropdown">
+                                        <li class="list-item"><a href="#">Aktualności</a></li>
+                                        <li class="list-item"><a href="#">Nasz team</a></li>
+                                        <li class="list-item"><a href="#">Historia</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">Galeria</a></li>
+                            <li><a href="#">Kontakt</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
     </header>
     <section>
-        <div class="section-1 container">
-            <div class="section-1-image">
-                <img class="black-chair" src="images/black_chair.png" />
-            </div>
-            <div class="section-1-article">
-                <h2>Sit <span class="green-letter">on</span> our <span class="green-letter">chair</span></h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum dignissimos eligendi, incidunt, quos a quo autem consequuntur possimus temporibus eius minus suscipit unde quod aperiam nisi beatae, veritatis ducimus fuga?</p>
-                    <button class="section-1-button">ZOBACZ WIĘCEJ</button>
-            </div>
-            <span class="arrow arrow-left">&#60;</span>
-            <span class="arrow arrow-right">&#62;</span>
-    </section>
-    <section>
-        <div class="section-2 container">
-            <img src="images/box1_img.jpg" />
-            <img src="images/box2_img.jpg" />
-            <div class="section-2-article">
-                <h2>Finds all inputs</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat illo incidunt magnam earum libero
-                    eaque vitae magni consequuntur iusto expedita!</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit vel dolorem sapiente, nam
-                    delectus perspiciatis!</p>
+        <div class="container">
+            <div class="section-1 row">
+                <div class="col-1"><span id="left-arrow" class="arrow" onclick="plusDivs(-1)">&#60;</span></div>
+                <div class="col-10">
+                    <div class="section-1-content row">
+                        <div class="section-1-slider col-6">
+                            <img src="./images/black_chair.png" class="mySlides">
+                            <img src="./images/red_chair.png" class="mySlides">
+                            <img src="./images/orange_chair.png" class="mySlides">
+                        </div>
+                        <div class="section-1-article col-6">
+                            <h2>Sit <span>on</span> our <span>chair</span></h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, voluptatum
+                                reprehenderit. Porro voluptas velit enim, eaque, vero inventore eveniet vel non sint
+                                laudantium iusto minima rem, quia excepturi aliquid nam!</p>
+                            <button class="btn-show-more">zobacz więcej</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"><span id="right-arrow" class="arrow" onclick="plusDivs(1)">&#62;</span></div>
             </div>
         </div>
     </section>
     <section>
         <div class="container">
-
-
+            <div class="section-2 row">
+                <div class="image-1 col-4">
+                    <div class="image-1-title">
+                        <h4>Chair CLAIR</h4>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+                <div class="image-2 col-4">
+                    <div class="image-2-title">
+                        <h4>Chair MARGARITA</h4>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+                <div class="section-2-article col-4">
+                    <h4>Finds all inputs</h4>
+                    <div class="underline"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, cupiditate quaerat. Nulla ab
+                        numquam corporis voluptate exercitationem quos architecto beatae vel laudantium. <br> <br>
+                        Facilis itaque, hic distinctio, sequi earum soluta qui ex ratione quod natus ab veritatis
+                        voluptatibus praesentium fugiat dignissimos!</p>
+                </div>
+            </div>
         </div>
     </section>
     <section>
         <div class="container">
-
-
+            <div class="section-3 row">
+                <div class="section-3-header row">
+                    <div class="col-12">
+                        <h3>cennik</h3>
+                        <div class="underline"></div>
+                    </div>
+                </div>
+                <div class="section-3-plans row">
+                    <div class="basic-plan col-4">
+                        <h3>Basic Plan</h3>
+                        <div class="price"><strong>85<sup>99</sup></strong><br>PLN/MSC</div>
+                        <div class="plan-list">
+                            <ul>
+                                <li>Zakup towaru + dowóz</li>
+                                <li>Serwis</li>
+                            </ul>
+                        </div>
+                        <button>Dołącz</button>
+                    </div>
+                    <div class="standard-plan col-4">
+                        <h3>Standard Plan</h3>
+                        <div class="price"><strong>95<sup>99</sup></strong><br>PLN/MSC</div>
+                        <div class="plan-list">
+                            <ul>
+                                <li>Zakup towaru + dowóz</li>
+                                <li>Serwis</li>
+                                <li>Gwarancja 5 lat</li>
+                            </ul>
+                        </div>
+                        <button>Dołącz</button>
+                    </div>
+                    <div class="advance-plan col-4">
+                        <h3>Advance Plan</h3>
+                        <div class="price"><strong>211<sup>00</sup></strong><br>PLN/MSC</div>
+                        <div class="plan-list">
+                            <ul>
+                                <li>Zakup towaru + dowóz</li>
+                                <li>Serwis</li>
+                                <li>Gwarancja 6 lat</li>
+                                <li>Porady projektanta</li>
+                            </ul>
+                        </div>
+                        <button>Dołącz</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="section-4 row">
+                <div class="section-4-header row">
+                    <div class="col-12">
+                        <h3>Kontakt</h3>
+                        <div class="underline"></div>
+                    </div>
+                </div>
+                <div class="contact-form row">
+                    <div class="form-contain col-7">
+                        <form>
+                            <input type="text" placeholder="Imię" />
+                            <input type="email" placeholder="email" />
+                            <textarea placeholder="Wiadomość"></textarea>
+                        </form>
+                    </div>
+                    <div class="red-chair col-5">
+                        <div class="red-chair-img"></div>
+                        <div class="checkbox-form row">
+                            <div class="col-3">
+                                <input id="checkInput" type="checkbox" />
+                                <label for="checkInput" class="check"></label>
+                            </div>
+                            <div class="col-9">
+                                <p>Zgadzam się na przetważanie danych osobowych</p>
+                            </div>
+                        </div>
+                        <button class="btn">WYŚLIJ</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <footer>
         <div class="container">
-
-
+            <div class="row">
+                <div class="col-7">
+                    <p>Copyright 2014 | All Rights Reserved. - Sit On Chair</p>
+                </div>
+                <div class="col-5">
+                    <div class="social-icons">
+                        <div class="icon-1"></div>
+                        <div class="icon-2"></div>
+                        <div class="icon-3"></div>
+                        <div class="icon-4"></div>
+                    </div>
+                    <div class="right-to-icons">SIT <span>ON </span> CHAIR</div>
+                </div>
+            </div>
         </div>
-
     </footer>
+    <script src="./js/app.js"></script>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
 </body>
 
 </html>
